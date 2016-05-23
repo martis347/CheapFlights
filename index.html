@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="date.js"></script>
+<script src="script.js"></script>
+
+</head>
+<body id="aa">
+<div class="w3-container w3-blue">
+<h2>Skrydzio detales</h2>
+</div>
+<div class="items">
+<form style="display: initial; margin: 5px 5px 5px 10px;" id="form" >
+  <div id="dataItem">
+    Date From: <input type="date" id="fromDate" value="2016-05-01">
+    To: <input type="date" id="toDate" value="2016-10-01">
+  </div>
+   
+  <div id="dataItem">
+    Visit duration(days): <input type="text" id="days" style="width:25px; margin-top:10px" value="3" class="w3-input">
+  </div>
+  
+  <div id="dataItem">
+    <form>
+      Flying From: <input type="text" id="from" style="width:50px;" value="VNO" class="w3-input">
+      Flying To: <input type="text" id="to" style="width:50px;" value="AMS" class="w3-input"> 
+    </form>
+  </div>
+</form>
+</div>
+<div style="margin-top:10px;">
+<form onsubmit="return false" >
+	<button onclick="DoIt()" class="button">  Submit</button>
+</form>
+</div>
+<table style="width:60%" hidden="true">
+  <tr>
+    <th align="left">Pigiausi skrydžiai pirmyn</th>
+    <th align="left">Pigiausi skrydžiai atgal</th>		
+    <th align="left">Pigiausi kombinuoti skrydžiai</th>
+  </tr>
+</table>
+
+
+<table style="width:60%" id="table1">
+</table>
+</body>
+</html>
