@@ -54,3 +54,7 @@
     font-size: 15px;
     border: 1px solid #aaa;
 }
+
+td,th {
+    text-align:center;
+}

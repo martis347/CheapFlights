@@ -18,7 +18,8 @@ function DoIt(){
     $("#header").text(cityFrom + " -> " + cityTo);
     $("form").remove();
     $("table").show();
-
+    $('#aa')[0].style.width = "auto";
+    $('#aa')[0].style.padding = "0px";
 
     window.setInterval(function(){
 		var asyncReturns = 0;
