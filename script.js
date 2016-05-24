@@ -15,7 +15,7 @@ function DoIt(){
     var tripStart = new Date(dateRangeFrom);
     var tripEnd = new Date(dateRangeFrom); tripEnd.setDate(tripStart.getDate() + parseInt(tripLengthDays));
 
-    $("#header").text(cityFrom + " -> " + cityTo);
+    $("h2").text(cityFrom + " -> " + cityTo);
     $("form").remove();
     $("table").show();
     $('#aa')[0].style.width = "auto";
